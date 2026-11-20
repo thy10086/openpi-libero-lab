@@ -1,0 +1,152 @@
+{
+  "dataset": "lerobot/libero",
+  "revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "fps": 10,
+  "dataset_task_index": 34,
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "simulator_task": "libero_spatial/0",
+  "episode_metadata": {
+    "path": "meta/episodes/chunk-000/file-000.parquet",
+    "sha256": "324db6d3f8efbfb340177507c11bfa2e78b1753c46802b3700fa8c8b4be461db"
+  },
+  "sources": [
+    {
+      "path": "data/chunk-000/file-321.parquet",
+      "sha256": "164388947b0642674d148bdc8b21771d0a606487032d5069d6b5bd44f0afceac"
+    },
+    {
+      "path": "data/chunk-000/file-322.parquet",
+      "sha256": "6317cf36c579fbd5e723a24ae7547b0018bf6c610ff1b8aaf7020ab8b2453500"
+    },
+    {
+      "path": "data/chunk-000/file-325.parquet",
+      "sha256": "a3b0a083f8f5dae5dbb6be97dba55e751bafe4c69beba84c46781b8a7b54d1b2"
+    },
+    {
+      "path": "data/chunk-000/file-327.parquet",
+      "sha256": "4b9e965cde43c2235024dd653c6341091e9cd3a929e429af6e740e6405624524"
+    },
+    {
+      "path": "data/chunk-000/file-329.parquet",
+      "sha256": "32ab06ec1009c218fe8433859178c9fb0f1032bd59160688826b5ae05f654902"
+    },
+    {
+      "path": "data/chunk-000/file-330.parquet",
+      "sha256": "278b33d45d972724f28584322362290407d7d06debf76079996adfa214f91142"
+    },
+    {
+      "path": "data/chunk-000/file-331.parquet",
+      "sha256": "2b838560a28990209d0ae3ed660f9450451282cdff1f44fb5df976621b34dc12"
+    },
+    {
+      "path": "data/chunk-000/file-334.parquet",
+      "sha256": "ac87b9a51a328044ac23a97163eab540a382b7590ebb240f1f104d829d4ec8fb"
+    },
+    {
+      "path": "data/chunk-000/file-338.parquet",
+      "sha256": "704d030fd17782571c5e4fec156551a64ffd2d3e9dc491f9d654a5ebd4cd8099"
+    },
+    {
+      "path": "data/chunk-000/file-344.parquet",
+      "sha256": "58da0c0be2c6ac4b60144e7c6c481f56b05f63c8f7a595cc8d3a9d59275e4dde"
+    },
+    {
+      "path": "data/chunk-000/file-345.parquet",
+      "sha256": "dd5c8e76f156977c064676aa1abf0658a362ebadcde5a38c7f7d8dd8070402fe"
+    },
+    {
+      "path": "data/chunk-000/file-346.parquet",
+      "sha256": "f91c3d3b94ea76b4575d814a743232396b59d35938c4dc50633bf055ac76c041"
+    },
+    {
+      "path": "data/chunk-000/file-347.parquet",
+      "sha256": "82d86222113e91ffff9f3afc5ab473526805438d99225e64b9d46a29fbb7a209"
+    },
+    {
+      "path": "data/chunk-000/file-348.parquet",
+      "sha256": "89ecf6674482be5a8686c540267d5996a3e71639ccb1e337e9858e8b13ae7414"
+    },
+    {
+      "path": "data/chunk-000/file-350.parquet",
+      "sha256": "f37e952908b0355216df6a0439f9316172fccb0c8ab303f1ca177a6d24924de8"
+    },
+    {
+      "path": "data/chunk-000/file-351.parquet",
+      "sha256": "835b3312bf825cdb120b3b7d016cf4a82432ab5d6b2d05b726c7b37b22ea728a"
+    },
+    {
+      "path": "data/chunk-000/file-355.parquet",
+      "sha256": "ebb4753179d19e8b29bd63b3737cdc5c7e2f532a916a7ea5deae2b5b65ace4c4"
+    },
+    {
+      "path": "data/chunk-000/file-356.parquet",
+      "sha256": "0dd4efef1d5894b9ba0137043805251772b0604e9d4d1928b3fe74f6a65ef8c0"
+    },
+    {
+      "path": "data/chunk-000/file-357.parquet",
+      "sha256": "2cdee337e001eea670cc2fa95b4db01398f387dafbb29b20676405e760591c27"
+    },
+    {
+      "path": "data/chunk-000/file-358.parquet",
+      "sha256": "a107e693faff5f62b7654446e1dbb3c58ead1003f0b5a3f616774a51cd77ec43"
+    },
+    {
+      "path": "data/chunk-000/file-359.parquet",
+      "sha256": "ca5117ea4abb2ccf3fea17db850e5bfc29d7bd87426d432ca166b8e59ffeccc5"
+    },
+    {
+      "path": "data/chunk-000/file-360.parquet",
+      "sha256": "a4d349b08dea757afcd6c5d1b427dd27110d0abe9d5ddee8de968f1a11123576"
+    },
+    {
+      "path": "data/chunk-000/file-361.parquet",
+      "sha256": "aa25d79cb6076f42d4fc7c51e12455c71a26e9813efba71a1172c7acd1d2ec1c"
+    },
+    {
+      "path": "data/chunk-000/file-362.parquet",
+      "sha256": "bd18868bd141e15147f518c9021afddefe2f782e563dceed02eeea5c84166a34"
+    },
+    {
+      "path": "data/chunk-000/file-364.parquet",
+      "sha256": "caa710fa5e68d111975b84868de472ad0826da2bd4977e177e39fc16231059e0"
+    }
+  ],
+  "episodes": {
+    "1344": 112,
+    "1347": 92,
+    "1352": 96,
+    "1368": 88,
+    "1379": 75,
+    "1382": 121,
+    "1395": 87,
+    "1397": 95,
+    "1401": 89,
+    "1410": 89,
+    "1425": 86,
+    "1449": 93,
+    "1450": 92,
+    "1491": 100,
+    "1493": 84,
+    "1500": 91,
+    "1504": 89,
+    "1506": 79,
+    "1517": 127,
+    "1527": 134,
+    "1532": 96,
+    "1560": 105,
+    "1563": 151,
+    "1567": 92,
+    "1568": 92,
+    "1574": 105,
+    "1579": 108,
+    "1583": 97,
+    "1589": 93,
+    "1597": 96,
+    "1602": 95,
+    "1615": 90,
+    "1617": 92
+  },
+  "rows": 3231,
+  "file": "libero_spatial_0.parquet",
+  "sha256": "50190eb11783270378212113964cb05c32cbd890327e0c47f908050e292e01d3"
+}

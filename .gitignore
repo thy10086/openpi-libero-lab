@@ -157,6 +157,9 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# Local trajectory lab runs and model checkpoints
+/lab_runs/
+
 # Cython debug symbols
 cython_debug/
 

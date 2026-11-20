@@ -1,5 +1,7 @@
 # openpi
 
+本地改造提供 LIBERO 轨迹质检、PyTorch 行为克隆、配对闭环评测和离线演示。运行方式及面试讲稿见 [项目指南](LAB_README.md)。
+
 openpi holds open-source models and packages for robotics, published by the [Physical Intelligence team](https://www.physicalintelligence.company/).
 
 Currently, this repo contains three types of models:

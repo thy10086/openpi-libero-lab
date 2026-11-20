@@ -18,6 +18,34 @@ LIBERO_DUMMY_ACTION = [0.0] * 6 + [-1.0]
 LIBERO_ENV_RESOLUTION = 256  # resolution used to render training data
 
 
+def prepare_images(obs, size):
+    # Rotate 180 degrees to match training preprocessing.
+    images = []
+    for key in ("agentview_image", "robot0_eye_in_hand_image"):
+        image = np.ascontiguousarray(obs[key][::-1, ::-1])
+        images.append(image_tools.convert_to_uint8(image_tools.resize_with_pad(image, size, size)))
+    return images
+
+
+def policy_state(obs):
+    return np.concatenate(
+        (
+            obs["robot0_eef_pos"],
+            _quat2axisangle(obs["robot0_eef_quat"].copy()),
+            obs["robot0_gripper_qpos"],
+        )
+    )
+
+
+def make_policy_input(obs, image, wrist_image, prompt):
+    return {
+        "observation/image": image,
+        "observation/wrist_image": wrist_image,
+        "observation/state": policy_state(obs),
+        "prompt": str(prompt),
+    }
+
+
 @dataclasses.dataclass
 class Args:
     #################################################################################################################
@@ -110,35 +138,14 @@ def eval_libero(args: Args) -> None:
                         t += 1
                         continue
 
-                    # Get preprocessed image
-                    # IMPORTANT: rotate 180 degrees to match train preprocessing
-                    img = np.ascontiguousarray(obs["agentview_image"][::-1, ::-1])
-                    wrist_img = np.ascontiguousarray(obs["robot0_eye_in_hand_image"][::-1, ::-1])
-                    img = image_tools.convert_to_uint8(
-                        image_tools.resize_with_pad(img, args.resize_size, args.resize_size)
-                    )
-                    wrist_img = image_tools.convert_to_uint8(
-                        image_tools.resize_with_pad(wrist_img, args.resize_size, args.resize_size)
-                    )
+                    img, wrist_img = prepare_images(obs, args.resize_size)
 
                     # Save preprocessed image for replay video
                     replay_images.append(img)
 
                     if not action_plan:
                         # Finished executing previous action chunk -- compute new chunk
-                        # Prepare observations dict
-                        element = {
-                            "observation/image": img,
-                            "observation/wrist_image": wrist_img,
-                            "observation/state": np.concatenate(
-                                (
-                                    obs["robot0_eef_pos"],
-                                    _quat2axisangle(obs["robot0_eef_quat"]),
-                                    obs["robot0_gripper_qpos"],
-                                )
-                            ),
-                            "prompt": str(task_description),
-                        }
+                        element = make_policy_input(obs, img, wrist_img, task_description)
 
                         # Query model to get action
                         action_chunk = client.infer(element)["actions"]
