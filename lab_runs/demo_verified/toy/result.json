@@ -1,0 +1,657 @@
+{
+  "settings": [
+    {
+      "execute_steps": 5,
+      "episodes": 10,
+      "successes": 10,
+      "success_rate": 1.0,
+      "outcomes": {
+        "success": 10
+      },
+      "mean_actions": 9.5,
+      "mean_inference_calls": 2.5,
+      "inference_p50_ms": 0.002,
+      "inference_p95_ms": 0.003,
+      "rollout_p50_ms": 0.022
+    },
+    {
+      "execute_steps": 1,
+      "episodes": 10,
+      "successes": 10,
+      "success_rate": 1.0,
+      "outcomes": {
+        "success": 10
+      },
+      "mean_actions": 8.8,
+      "mean_inference_calls": 8.8,
+      "inference_p50_ms": 0.002,
+      "inference_p95_ms": 0.002,
+      "rollout_p50_ms": 0.031
+    },
+    {
+      "execute_steps": 10,
+      "episodes": 10,
+      "successes": 5,
+      "success_rate": 0.5,
+      "outcomes": {
+        "success": 5,
+        "timeout": 5
+      },
+      "mean_actions": 10,
+      "mean_inference_calls": 1.5,
+      "inference_p50_ms": 0.002,
+      "inference_p95_ms": 0.003,
+      "rollout_p50_ms": 0.021
+    }
+  ],
+  "paired": [
+    {
+      "baseline": 5,
+      "candidate": 1,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "invalid_pairs": 0
+    },
+    {
+      "baseline": 5,
+      "candidate": 10,
+      "wins": 0,
+      "ties": 5,
+      "losses": 5,
+      "invalid_pairs": 0
+    }
+  ],
+  "episodes": [
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 0,
+        "seed": 7
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.004673987859860063,
+        0.0031270028557628393
+      ],
+      "rollout_ms": 0.053208001190796494,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 0,
+        "seed": 7
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 6,
+      "inference_ms": [
+        0.002161017619073391,
+        0.0019599974621087313,
+        0.0020199804566800594,
+        0.0017230049706995487,
+        0.001747015630826354,
+        0.001769978553056717
+      ],
+      "rollout_ms": 0.0306089932564646,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 0,
+        "seed": 7
+      },
+      "execute_steps": 10,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 1,
+      "inference_ms": [
+        0.0018090067896991968
+      ],
+      "rollout_ms": 0.018580991309136152,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 1,
+        "seed": 8
+      },
+      "execute_steps": 10,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 1,
+      "inference_ms": [
+        0.0018620048649609089
+      ],
+      "rollout_ms": 0.01622698619030416,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 1,
+        "seed": 8
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 6,
+      "inference_ms": [
+        0.0017599959392100573,
+        0.001768989022821188,
+        0.001615990186110139,
+        0.0015580153558403254,
+        0.0015329860616475344,
+        0.0016120029613375664
+      ],
+      "rollout_ms": 0.024474982637912035,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 1,
+        "seed": 8
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.0016530102584511042,
+        0.001634994987398386
+      ],
+      "rollout_ms": 0.017829006537795067,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 2,
+        "seed": 9
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.0015709956642240286,
+        0.0016510020941495895
+      ],
+      "rollout_ms": 0.017622020095586777,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 2,
+        "seed": 9
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 6,
+      "inference_ms": [
+        0.0016539997886866331,
+        0.001587992301210761,
+        0.0016490230336785316,
+        0.001514999894425273,
+        0.0014700053725391626,
+        0.00152099528349936
+      ],
+      "rollout_ms": 0.023972999770194292,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 2,
+        "seed": 9
+      },
+      "execute_steps": 10,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 1,
+      "inference_ms": [
+        0.001641979906708002
+      ],
+      "rollout_ms": 0.015600002370774746,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 3,
+        "seed": 10
+      },
+      "execute_steps": 10,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 1,
+      "inference_ms": [
+        0.00160199124366045
+      ],
+      "rollout_ms": 0.015260971849784255,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 3,
+        "seed": 10
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 6,
+      "inference_ms": [
+        0.0017060083337128162,
+        0.0016630219761282206,
+        0.0015420082490891218,
+        0.0015260011423379183,
+        0.001501000951975584,
+        0.0017660204321146011
+      ],
+      "rollout_ms": 0.023945001885294914,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 3,
+        "seed": 10
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.0015909899957478046,
+        0.0016329868230968714
+      ],
+      "rollout_ms": 0.017797021428123116,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 4,
+        "seed": 11
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.00160199124366045,
+        0.0016230042092502117
+      ],
+      "rollout_ms": 0.01714698737487197,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 4,
+        "seed": 11
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 6,
+      "inference_ms": [
+        0.0015400000847876072,
+        0.0016459962353110313,
+        0.001688982592895627,
+        0.0016050180420279503,
+        0.0016079866327345371,
+        0.0030400115065276623
+      ],
+      "rollout_ms": 0.025604007532820106,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "stationary",
+        "initial_state": 4,
+        "seed": 11
+      },
+      "execute_steps": 10,
+      "outcome": "success",
+      "steps": 6,
+      "inference_calls": 1,
+      "inference_ms": [
+        0.0029049988370388746
+      ],
+      "rollout_ms": 0.0453819811809808,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 0,
+        "seed": 7
+      },
+      "execute_steps": 10,
+      "outcome": "timeout",
+      "steps": 14,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.0019120052456855774,
+        0.0033469987101852894
+      ],
+      "rollout_ms": 0.024962995667010546,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 0,
+        "seed": 7
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 11,
+      "inference_calls": 11,
+      "inference_ms": [
+        0.0017269921954721212,
+        0.0017429993022233248,
+        0.0016929989214986563,
+        0.0015900004655122757,
+        0.0017569982446730137,
+        0.0016230042092502117,
+        0.0017050188034772873,
+        0.001608976162970066,
+        0.0016220146790146828,
+        0.001687993062660098,
+        0.0016039994079619646
+      ],
+      "rollout_ms": 0.036662007914856076,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 0,
+        "seed": 7
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 13,
+      "inference_calls": 3,
+      "inference_ms": [
+        0.0016929989214986563,
+        0.0016840058378875256,
+        0.0015530094970017672
+      ],
+      "rollout_ms": 0.022784981410950422,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 1,
+        "seed": 8
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 13,
+      "inference_calls": 3,
+      "inference_ms": [
+        0.0016769918147474527,
+        0.00161500065587461,
+        0.001654989318922162
+      ],
+      "rollout_ms": 0.022275024093687534,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 1,
+        "seed": 8
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 11,
+      "inference_calls": 11,
+      "inference_ms": [
+        0.001574982888996601,
+        0.0017069978639483452,
+        0.001601001713424921,
+        0.0016060075722634792,
+        0.0015789992175996304,
+        0.0015730038285255432,
+        0.0015360128600150347,
+        0.0015629921108484268,
+        0.0016069971024990082,
+        0.0015429977793246508,
+        0.0015390105545520782
+      ],
+      "rollout_ms": 0.03535399446263909,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 1,
+        "seed": 8
+      },
+      "execute_steps": 10,
+      "outcome": "timeout",
+      "steps": 14,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.0016110134311020374,
+        0.0018030114006251097
+      ],
+      "rollout_ms": 0.02169498475268483,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 2,
+        "seed": 9
+      },
+      "execute_steps": 10,
+      "outcome": "timeout",
+      "steps": 14,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.0016439880710095167,
+        0.0016939884517341852
+      ],
+      "rollout_ms": 0.02129099448211491,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 2,
+        "seed": 9
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 12,
+      "inference_calls": 12,
+      "inference_ms": [
+        0.0016780104488134384,
+        0.0016719859559088945,
+        0.0016129924915730953,
+        0.001581996912136674,
+        0.0016069971024990082,
+        0.0016239937394857407,
+        0.0015129917301237583,
+        0.0015170080587267876,
+        0.0015279802028089762,
+        0.0015459954738616943,
+        0.0014799879863858223,
+        0.00156002352014184
+      ],
+      "rollout_ms": 0.0379650155082345,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 2,
+        "seed": 9
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 13,
+      "inference_calls": 3,
+      "inference_ms": [
+        0.00161500065587461,
+        0.001674023224040866,
+        0.0015859841369092464
+      ],
+      "rollout_ms": 0.022540014469996095,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 3,
+        "seed": 10
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 13,
+      "inference_calls": 3,
+      "inference_ms": [
+        0.0017040001694113016,
+        0.0017220154404640198,
+        0.001634994987398386
+      ],
+      "rollout_ms": 0.022769003408029675,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 3,
+        "seed": 10
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 12,
+      "inference_calls": 12,
+      "inference_ms": [
+        0.001641979906708002,
+        0.0016379926819354296,
+        0.0015669793356209993,
+        0.0015890109352767467,
+        0.0015409896150231361,
+        0.0015450059436261654,
+        0.0015620025806128979,
+        0.001601001713424921,
+        0.0015900004655122757,
+        0.0015870027709752321,
+        0.0015920086298137903,
+        0.001528009306639433
+      ],
+      "rollout_ms": 0.03767901216633618,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 3,
+        "seed": 10
+      },
+      "execute_steps": 10,
+      "outcome": "timeout",
+      "steps": 14,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.0015840050764381886,
+        0.0017909915186464787
+      ],
+      "rollout_ms": 0.02162897726520896,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 4,
+        "seed": 11
+      },
+      "execute_steps": 10,
+      "outcome": "timeout",
+      "steps": 14,
+      "inference_calls": 2,
+      "inference_ms": [
+        0.001587992301210761,
+        0.0017330166883766651
+      ],
+      "rollout_ms": 0.021504994947463274,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 4,
+        "seed": 11
+      },
+      "execute_steps": 1,
+      "outcome": "success",
+      "steps": 12,
+      "inference_calls": 12,
+      "inference_ms": [
+        0.0016050180420279503,
+        0.001620996044948697,
+        0.001548003638163209,
+        0.001568987499922514,
+        0.0016539997886866331,
+        0.0015390105545520782,
+        0.001581996912136674,
+        0.0015090045053511858,
+        0.0016049889381974936,
+        0.0016319972928613424,
+        0.001581007381901145,
+        0.0015829864423722029
+      ],
+      "rollout_ms": 0.03737001679837704,
+      "error": null
+    },
+    {
+      "case": {
+        "task": "target_moves",
+        "initial_state": 4,
+        "seed": 11
+      },
+      "execute_steps": 5,
+      "outcome": "success",
+      "steps": 13,
+      "inference_calls": 3,
+      "inference_ms": [
+        0.0016260019037872553,
+        0.0017629936337471008,
+        0.0015269906725734472
+      ],
+      "rollout_ms": 0.022271997295320034,
+      "error": null
+    }
+  ],
+  "backend": "toy",
+  "policy": "deterministic-chunk-planner",
+  "execute_steps": [
+    5,
+    1,
+    10
+  ],
+  "seed": 7,
+  "trials": 5,
+  "max_steps": 14,
+  "python": "3.10.22",
+  "videos": []
+}

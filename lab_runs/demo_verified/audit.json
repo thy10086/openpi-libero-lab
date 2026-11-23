@@ -1,0 +1,388 @@
+{
+  "rows": 3231,
+  "episodes_seen": 33,
+  "clean_episodes": 33,
+  "flagged_episodes": 0,
+  "rejected_rows": {},
+  "issue_counts": {},
+  "episodes": [
+    {
+      "episode_index": 1344,
+      "frames": 112,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1347,
+      "frames": 92,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1352,
+      "frames": 96,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1368,
+      "frames": 88,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1379,
+      "frames": 75,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1382,
+      "frames": 121,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1395,
+      "frames": 87,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1397,
+      "frames": 95,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1401,
+      "frames": 89,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1410,
+      "frames": 89,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1425,
+      "frames": 86,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1449,
+      "frames": 93,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1450,
+      "frames": 92,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1491,
+      "frames": 100,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1493,
+      "frames": 84,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1500,
+      "frames": 91,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1504,
+      "frames": 89,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1506,
+      "frames": 79,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1517,
+      "frames": 127,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1527,
+      "frames": 134,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1532,
+      "frames": 96,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1560,
+      "frames": 105,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1563,
+      "frames": 151,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1567,
+      "frames": 92,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1568,
+      "frames": 92,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1574,
+      "frames": 105,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1579,
+      "frames": 108,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1583,
+      "frames": 97,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1589,
+      "frames": 93,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1597,
+      "frames": 96,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1602,
+      "frames": 95,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1615,
+      "frames": 90,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    },
+    {
+      "episode_index": 1617,
+      "frames": 92,
+      "task_indices": [
+        34
+      ],
+      "splits": [
+        "unspecified"
+      ],
+      "issues": {}
+    }
+  ],
+  "fps": 10.0,
+  "gap_factor": 1.5,
+  "state_dim": 8,
+  "action_dim": 7,
+  "split_check_requested": false,
+  "dataset": "lerobot/libero",
+  "revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "inputs": [
+    {
+      "split": "unspecified",
+      "file": "libero_spatial_0.parquet",
+      "sha256": "50190eb11783270378212113964cb05c32cbd890327e0c47f908050e292e01d3"
+    }
+  ],
+  "scope": "record columns; video integrity and full episode coverage are not measured"
+}

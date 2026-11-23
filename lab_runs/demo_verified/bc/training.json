@@ -1,0 +1,165 @@
+{
+  "architecture": "state-only MLP",
+  "seed": 7,
+  "horizon": 10,
+  "task_index_filter": 34,
+  "train_episodes": [
+    1344,
+    1347,
+    1352,
+    1368,
+    1395,
+    1401,
+    1410,
+    1449,
+    1450,
+    1491,
+    1493,
+    1500,
+    1504,
+    1506,
+    1517,
+    1527,
+    1532,
+    1560,
+    1563,
+    1568,
+    1579,
+    1583,
+    1589,
+    1597,
+    1602,
+    1617
+  ],
+  "validation_episodes": [
+    1379,
+    1382,
+    1397,
+    1425,
+    1567,
+    1574,
+    1615
+  ],
+  "train_tasks": [
+    34
+  ],
+  "validation_tasks": [
+    34
+  ],
+  "train_windows": 2567,
+  "validation_windows": 664,
+  "mean_action_validation_mae": 0.324551,
+  "history": [
+    {
+      "epoch": 1,
+      "validation_mae": 0.24325
+    },
+    {
+      "epoch": 2,
+      "validation_mae": 0.18373
+    },
+    {
+      "epoch": 3,
+      "validation_mae": 0.169158
+    },
+    {
+      "epoch": 4,
+      "validation_mae": 0.162559
+    },
+    {
+      "epoch": 5,
+      "validation_mae": 0.152577
+    },
+    {
+      "epoch": 6,
+      "validation_mae": 0.14856
+    },
+    {
+      "epoch": 7,
+      "validation_mae": 0.146067
+    },
+    {
+      "epoch": 8,
+      "validation_mae": 0.146849
+    },
+    {
+      "epoch": 9,
+      "validation_mae": 0.143756
+    },
+    {
+      "epoch": 10,
+      "validation_mae": 0.141022
+    },
+    {
+      "epoch": 11,
+      "validation_mae": 0.139854
+    },
+    {
+      "epoch": 12,
+      "validation_mae": 0.139292
+    },
+    {
+      "epoch": 13,
+      "validation_mae": 0.137389
+    },
+    {
+      "epoch": 14,
+      "validation_mae": 0.136759
+    },
+    {
+      "epoch": 15,
+      "validation_mae": 0.136119
+    },
+    {
+      "epoch": 16,
+      "validation_mae": 0.13589
+    },
+    {
+      "epoch": 17,
+      "validation_mae": 0.133324
+    },
+    {
+      "epoch": 18,
+      "validation_mae": 0.136849
+    },
+    {
+      "epoch": 19,
+      "validation_mae": 0.131699
+    },
+    {
+      "epoch": 20,
+      "validation_mae": 0.133749
+    },
+    {
+      "epoch": 21,
+      "validation_mae": 0.131683
+    },
+    {
+      "epoch": 22,
+      "validation_mae": 0.133428
+    },
+    {
+      "epoch": 23,
+      "validation_mae": 0.131169
+    },
+    {
+      "epoch": 24,
+      "validation_mae": 0.132491
+    },
+    {
+      "epoch": 25,
+      "validation_mae": 0.131287
+    }
+  ],
+  "validation_mae": 0.131287,
+  "torch_version": "2.5.1+cpu",
+  "inputs": [
+    {
+      "file": "libero_spatial_0.parquet",
+      "sha256": "50190eb11783270378212113964cb05c32cbd890327e0c47f908050e292e01d3"
+    }
+  ],
+  "dataset": "lerobot/libero",
+  "revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "fps": 10.0
+}

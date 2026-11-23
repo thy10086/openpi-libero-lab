@@ -1,0 +1,23 @@
+{
+  "dataset_sha256_verified": true,
+  "episode_split_disjoint": true,
+  "validation_history_identical_on_two_cpu_runs": true,
+  "paired_initial_states_verified": true,
+  "libero_rollouts": 9,
+  "toy_rollouts": 30,
+  "dashboard_links_verified": true,
+  "videos": {
+    "closed_loop/videos/libero_spatial-0-k10.gif": {
+      "frames": 78,
+      "changed_between_first_and_last": true
+    },
+    "closed_loop/videos/libero_spatial-0-k5.gif": {
+      "frames": 76,
+      "changed_between_first_and_last": true
+    },
+    "zero/videos/libero_spatial-0-k5.gif": {
+      "frames": 219,
+      "changed_between_first_and_last": true
+    }
+  }
+}

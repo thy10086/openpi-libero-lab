@@ -1,3 +1,9 @@
+# OpenPI LIBERO 具身策略实验台
+
+本项目基于 Physical Intelligence 的 OpenPI，增加示范轨迹审计、PyTorch 行为克隆基线和 LIBERO 配对闭环评测。先看[项目入口与复现说明](LAB_README.md)。[本机实测看板源码](lab_runs/demo_verified/index.html)可下载后直接打开，其中包括逐轮记录和仿真回放。
+
+下方为上游 OpenPI 说明。项目保留上游提交历史、许可证和子模块版本。
+
 # openpi
 
 本地改造提供 LIBERO 轨迹质检、PyTorch 行为克隆、配对闭环评测和离线演示。运行方式及面试讲稿见 [项目指南](LAB_README.md)。

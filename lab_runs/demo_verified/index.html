@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenPI 具身策略实验台</title>
+<style>
+:root { color-scheme: light; font-family: "Inter","Microsoft YaHei",system-ui,sans-serif; color:#142820; background:#f3f6ef; }
+* { box-sizing:border-box; }
+body { margin:0; }
+main { max-width:1050px; margin:auto; padding:44px 24px; }
+h1 { font-size:clamp(26px,5vw,47px); margin:0 0 14px; letter-spacing:-.035em; }
+h2 { margin:0 0 12px; font-size:22px; }
+p { line-height:1.75; margin:8px 0; }
+a { color:#246349; text-underline-offset:3px; }
+section { background:#fff; border:1px solid #d7e1d7; border-radius:14px; margin:18px 0; padding:22px; }
+.metrics,.gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:14px; }
+.metrics div { padding:14px 12px; border:1px solid #e1eadd; border-radius:9px; background:#f6f9f4; }
+strong { display:block; font-size:24px; }
+.scroll { overflow:auto; }
+table { border-collapse:collapse; width:100%; text-align:left; font-size:14px; }
+th,td { padding:11px 9px; border-bottom:1px solid #e0e7e0; white-space:nowrap; }
+th { color:#315647; }
+figure { margin:0; border:1px solid #dae5da; border-radius:10px; overflow:hidden; }
+figure img { display:block; width:100%; aspect-ratio:1; object-fit:contain; background:#dfe8df; }
+figcaption { padding:10px; font-size:13px; line-height:1.5; }
+.note { color:#42534b; font-size:14px; }
+</style>
+</head>
+<body><main>
+<h1>OpenPI 具身策略实验台</h1>
+<p>从公开示范轨迹、动作窗口和行为克隆训练，到固定初态下的 LIBERO 闭环执行。</p>
+<p class="note">任务为抓起位于餐盘与小碗之间的黑碗，并将它放入餐盘。以下结果来自 CPU 小样本实验。</p>
+<section>
+<h2>轨迹审计与离线训练</h2>
+<div class="metrics">
+<div><strong>33</strong>公开示范轨迹</div>
+<div><strong>3231</strong>动作和状态采样</div>
+<div><strong>0.1313</strong>模型验证 MAE</div>
+<div><strong>0.3246</strong>均值动作验证 MAE</div>
+</div>
+<p class="note">按 episode 划分训练和验证。MAE 在保留的示范动作上计算，闭环成功率见下一节。</p>
+<p><a href="audit.json">数据审计 JSON</a> · <a href="bc/training.json">逐轮训练记录</a></p>
+</section>
+<section>
+<h2>LIBERO 闭环</h2>
+<div class="scroll"><table><thead><tr><th>策略</th><th>每次执行步数 K</th><th>成功 / 总数</th><th>平均调用</th><th>推理 P95 ms</th><th>结局</th></tr></thead><tbody>
+<tr><td>行为克隆</td><td>5</td><td>2 / 3</td><td>25</td><td>0.929</td><td>success×2, timeout×1</td></tr><tr><td>行为克隆</td><td>10</td><td>2 / 3</td><td>12.667</td><td>0.953</td><td>success×2, timeout×1</td></tr><tr><td>零动作</td><td>5</td><td>0 / 3</td><td>44</td><td>0.042</td><td>timeout×3</td></tr>
+</tbody></table></div>
+<p class="note">固定任务、初态和仿真种子。行为克隆仅使用机器人自身状态。π₀.₅ 权重评测通过 OpenPI 服务单独运行。</p>
+<p><a href="closed_loop/episodes.csv">行为克隆逐轮记录</a> · <a href="zero/episodes.csv">零动作逐轮记录</a></p>
+</section>
+<section>
+<h2>模拟器回放</h2>
+<div class="gallery"><figure><img src="closed_loop/videos/libero_spatial-0-k10.gif" alt="行为克隆 libero_spatial-0-k10 模拟器回放" loading="lazy"><figcaption>行为克隆 · libero_spatial-0-k10</figcaption></figure><figure><img src="closed_loop/videos/libero_spatial-0-k5.gif" alt="行为克隆 libero_spatial-0-k5 模拟器回放" loading="lazy"><figcaption>行为克隆 · libero_spatial-0-k5</figcaption></figure><figure><img src="zero/videos/libero_spatial-0-k5.gif" alt="零动作对照 libero_spatial-0-k5 模拟器回放" loading="lazy"><figcaption>零动作对照 · libero_spatial-0-k5</figcaption></figure></div>
+</section>
+<section>
+<h2>动作片段长度的受控对照</h2>
+<div class="scroll"><table><thead><tr><th>策略</th><th>每次执行步数 K</th><th>成功 / 总数</th><th>平均调用</th><th>推理 P95 ms</th><th>结局</th></tr></thead><tbody>
+<tr><td>确定性规划器</td><td>5</td><td>10 / 10</td><td>2.5</td><td>0.003</td><td>success×10</td></tr><tr><td>确定性规划器</td><td>1</td><td>10 / 10</td><td>8.8</td><td>0.002</td><td>success×10</td></tr><tr><td>确定性规划器</td><td>10</td><td>5 / 10</td><td>1.5</td><td>0.003</td><td>success×5, timeout×5</td></tr>
+</tbody></table></div>
+<p class="note">本节使用一维模拟环境验证配对评测，并包含目标中途移动的场景。</p>
+<p><a href="toy/episodes.csv">受控对照逐轮记录</a></p>
+</section>
+</main></body></html>
